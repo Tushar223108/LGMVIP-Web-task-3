@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.heading{
+  text-align: center;
+  margin: 5px;
+  color: rgb(2, 1, 1);
+  padding: 10px;
+  font-size: 4rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+  background-image:url('./pp.png');
+  background-size: 100%;
+}
+
+:root {
+  /* color for main nav */
+  --bg-light-green: #e99649;
+
+  /* color for (description and image (tittled)) nav. */
+  --bg-green-yellow: #738cb1;
+
+  
+  /* color for border */
+  --b-dark-yellow: #12131259;
+ 
+
+  /* color for new wrapper div */
+  --b-light-yellow: rgb(223, 124, 124);
+}
+
+.nav-bar {
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  background-color: var(--b-dark-yellow);
+  font-size: 40px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  text-shadow: rgb(247, 149, 149);
+  text-decoration: wavy;
+    border-bottom: solid 4px #5a69e7;
+  color: rgb(63, 214, 156);
+}
+
+.d-flex {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.students {
+  display: flex;
+  gap: 10px;
+  height: auto;
+  width: auto;
+  background-color: #4ec4a7; 
+}
+
+.enroll-student {
+  margin-top: 30px;
+  padding-right: 100px;
+  box-sizing: border-box;
+  width: 45%;
+  height: auto;
+}
+
+#enrolled-students {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  justify-content: center;
+  width: 55%;
+  height: calc(100vh - 70px);
+  overflow: scroll;
+}
+
+.enroll-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gender {
+  padding-left: 15px;
+}
+
+.label {
+  display: flex;
+  font-size: 30px;
+}
+
+.form-control {
+  margin-bottom: 16px;
+}
+
+.seperation-border {
+  box-sizing: border-box;
+
+  width: 1.3px;
+  height: 70vh;
+  background: var(--bg-light-green);
+}
+
+@media screen and (max-width: 768px) {
+  hr.seperation-border{
+    height: 0;
+  }
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-green-yellow);
+  color: rgb(8, 5, 5);
+  box-sizing: border-box;
+  border: solid 2px var(--b-dark-yellow);
+}
+
+.sectionHeading > p {
+  padding: 10px 12px;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.description {
+  box-sizing: border-box;
+  border-right: solid 2px var(--b-dark-yellow);
+  margin-bottom: 0;
+  width: 70%;
+}
+
+.Image {
+  margin-bottom: 0;
+  width: 30%;
+}
+
+.infoText {
+  margin: 0;
+  padding: 0;
+}
+
+.userName {
+  font-weight: bold;
+}
+
+.wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 130px;
+  justify-content: space-between;
+  border: solid 2px var(--b-dark-yellow);
+  border-top: none;
+  animation: fadeIn 2s;
+  position: relative;
+}
+
+.userDeleteBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  transform: rotate(45deg);
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  button.userDeleteBtn {
+    display:block;
+  }
+  
+}
+
+.wrapper:hover .userDeleteBtn {
+  display: block;
+}
+
+.wrapper:nth-child(odd) {
+  background-color: rgb(115, 190, 233);
+}
+.wrapper:nth-child(even) {
+  background-color: var(--b-light-yellow);
+}
+
+.textInfoContainer {
+  width: 70%;
+  height: 100%;
+  box-sizing: border-box;
+  border-right: solid 2px var(--b-dark-yellow);
+  padding: 10px;
+}
+
+.imageContainer {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.userImage {
+  height: auto;
+  width: 105px;
+}
+
+.fadeIn {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
